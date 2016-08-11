@@ -1,0 +1,50 @@
+{
+    "name": "MacGruber11/ff_model",
+    "type": "library",
+    "description": ":package_description",
+    "keywords": [
+        "MacGruber11",
+        "ff_model"
+    ],
+    "homepage": "https://github.com/MacGruber11/ff_model",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": ":author_name",
+            "email": ":author_email",
+            "homepage": ":author_website",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.1",
+        "php" : "~5.6|~7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "~4.0||~5.0",
+        "scrutinizer/ocular": "~1.1",
+        "squizlabs/php_codesniffer": "~2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "MacGruber11\\ff_model\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MacGruber11\\ff_model\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "format": "phpcbf --standard=psr2 src/"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
